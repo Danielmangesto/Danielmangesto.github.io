@@ -1,7 +1,0 @@
-Grading Comments:
-
-Missing sections: education, hobbies  -20
-Usually, javascript code is written in a separate file, and images are stored in a dedicated directory.
-
-
- You used master branch instead of main branch         -5
