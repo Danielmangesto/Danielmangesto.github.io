@@ -1,0 +1,194 @@
+/*container styles */
+.container{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Home-About-Name styles */
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info{
+    display: flex;
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.left{
+    display: flex;
+    justify-content: normal;
+    padding: 20px;
+}
+.info > .left > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.link{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.link a{
+    color: #848282;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.Name{
+    display: flex;
+    color: #515760;
+    position: absolute;
+    top: 4%;
+    left: 45%;
+}
+
+.link :hover{
+    border-bottom: 1px solid black;
+}
+
+.link a:hover{
+    color: black;
+}
+
+.active-link{
+    border-bottom: 1px solid black;
+}
+.active-link a{
+    color: black !important;
+}
+
+/* Portfolio styles */
+.portfolio-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.portfolio-item{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+.image-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img {
+    width: 20%;
+    margin-bottom: 10px;
+
+}
+
+.Emaillogo{
+    position: relative;
+}
+
+.Emaillogo img{
+    width: 20%;
+}
+
+.Telephonelogo{
+    position: relative;
+    top: 25%;
+}
+
+.Facebooklogo{
+    position: relative;
+    width: 80%;
+    left: 12%;
+}
+
+.image-text .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.image-text:hover .subtitle{
+    font-weight: 600;
+    color: #2c2e34;
+}
+
+.image-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* about-me-style */
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image img{
+    width: 65%;
+}
+
+.profile-content{
+    padding: 30px;
+}
+
+.profile-content h1{
+    color: dimgrey;
+}
+
+.email{
+    position: relative;
+    bottom: 2%;
+}
+
+
+.email input{
+    padding: 9px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.email textarea{
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.profile-content{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.background-about{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}

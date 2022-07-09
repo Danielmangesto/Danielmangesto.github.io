@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="info">
+        <div class="left">
+            <div class="link active-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="link">
+                <a href="about.html">About Me</a>
+            </div>
+            <div class="Name">
+                <h3>Daniel Mangesto</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <div class="portfolio-img-background" style="background-image:url(Photos/buis.jpg)"></div>
+                    <div class="image-text">
+                        <div class="logo">
+                            <a href="Construction.html" target="_blank">
+                            <img src="Photos/Linkedin-Logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="subtitle">
+                            My linkdin profile
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(Photos/WalkingP.jpg)"></div>
+                    <div class="image-text">
+                        <div class="logo">
+                            <a href="https://www.facebook.com/danielmangesto/" target="_blank">
+                                <div class="Facebooklogo"
+>                      <img src="Photos/facebooklogo.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="subtitle">
+                            My facebook profile
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(Photos/phonetalk.jpg)"></div>
+                    <div class="image-text">
+                        <div class="logo">
+                            <div class="Telephonelogo">
+                            <img src="Photos/telephonelogo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="subtitle">
+                            <h2>My phone number: +972524334294</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background"
+                         style="background-image:url(Photos/sending.jpg)"></div>
+                    <div class="image-text">
+                        <div class="logo">
+                            <a href="mailto:Danielmangesto@gmail.com?" target="_blank">
+                            <div class="Emaillogo">
+                            <img src="Photos/EmailIcon.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="subtitle">
+                            Email me! or leave you mail here:
+                            <form name="myForm" target="_blank" action="Thanks.html" onsubmit="return validateForm()" method="post">
+                                Email: <input type="text" name="fname">
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-darken');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-darken');
+        });
+    });
+</script>
+<script type="text/javascript" src="Script.js"></script>
+</html>
